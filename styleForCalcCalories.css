@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s;
+    font-family: Roboto;
+}
+
+body{
+    background: #eee;
+    padding: 0 15px;
+}
+
+.container {
+    max-width: 400px;
+    /* background: red; */
+    margin: auto;
+    margin: 15px auto;
+}
+
+.information{
+    transition: all 0.7s;
+    padding: 5px 17px 15px;
+    border-radius: 20px;
+    border: rgb(0, 0, 0) solid 1px;
+    background: rgb(206, 206, 206);
+
+    /* background: #FF0000; */
+}
+
+.information h2 {
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding-bottom: 11px;
+
+    /* color: #fff; */
+}
+.inputs{
+    display: flex;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input::-webkit-input-placeholder {
+    color: aliceblue;
+}
+
+.inputs div {
+    /* width: 50%; */
+    width: 100%;
+    padding: 0 3px 15px;
+    display: flex;
+}
+
+.inputs input, select{
+    border: none;
+    background: rgb(180, 180, 180);
+    border-radius: 5px 5px 2px 2px;
+    border-bottom: rgb(160, 255, 246) solid 2px;
+    font-size: 15px;
+    text-align: center;
+    height: 25px;
+    color: aliceblue;
+    box-sizing:content-box;
+    width: 160px;
+
+    /* background: #ce0000;
+    border-bottom: rgb(32, 158, 255) solid 2px; */
+}
+
+.inputs input {
+    margin: auto;
+    outline: none;
+}
+.inputs select{
+    outline: none;
+}
+
+.inputs input:focus, .inputs select:focus, #BtnSubmit:hover{
+    box-shadow: 0 0 25px rgb(160, 255, 246) ;
+
+
+}
+
+.information #BtnSubmit{
+    display: block;
+    border: none;
+    border-radius: 8px;
+    width: 90px;
+    background-color: rgb(160, 255, 246);
+    height: 30px;
+    margin: auto;
+    text-align: center;
+
+
+}
+
+.information #BtnSubmit:hover{
+    background: rgb(2, 255, 230);
+
+}

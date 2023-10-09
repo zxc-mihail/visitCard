@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор калорий</title>
+    <link href="styleForCalcCalories.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id = 'information' class="information">
+            <h2 id="head">Данные</h2>
+            <form>
+            <div class="inputs">
+
+                <div id="gender">
+                    <select name="select" id = 'select' required>
+                        <option value = '' selected disabled>Выберете свой пол</option>
+                        <option value = 'Мужчина'>Мужчина</option>
+                        <option value = 'Женщина'>Женщина</option>
+                    </select>
+                </div>
+
+                <div id="weight">
+                    <input type="number" name="weight" id="inputWeight" placeholder="Введите свой вес (кг)" required>
+                </div>
+
+            </div>
+            <button type = 'submit' id="BtnSubmit" value = 'Сохранить' onclick = 'saveInfo(event)'>Сохранить</button>
+        </form>
+        </div>
+    </div>
+
+
+
+
+<script src="script.js" defer></script>
+</body>
+</html>
